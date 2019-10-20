@@ -23,17 +23,17 @@ Optional Flags
 
 convert_weights_pb.py:
 
-    1. `--class_names`
-            1. Path to the class names file
-    2. `--weights_file`
-        1. Path to the desired weights file    
-    3. `--data_format`
-        1.  `NCHW` (gpu only) or `NHWC`
-    4. `--tiny`
-        1. Use yolov3-tiny
-    5. `--spp`
-        1. Use yolov3-spp
-    6. `--output_graph`
-        1. Location to write the output .pb graph to
+    `--class_names`
+        Path to the class names file
+    `--weights_file`
+        Path to the desired weights file    
+    `--data_format`
+        `NCHW` (gpu only) or `NHWC`
+    `--tiny`
+        Use yolov3-tiny
+    `--spp`
+        Use yolov3-spp
+    `--output_graph`
+        Location to write the output .pb graph
         
 Contact me if you have any issues: binhtd.hust@gmail.com / Binh Do
