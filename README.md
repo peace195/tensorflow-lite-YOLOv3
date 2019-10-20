@@ -6,16 +6,15 @@ Convert the weights of YOLO v3 object detector into tensorflow lite format. It c
     docker build -t tflite .
     docker run -it -v /home/peace195/tensorflow-lite-yolo-v3:/root/ tflite
     
-## How to run:
+## How to run
 
 1. Download COCO class names file: `wget https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names`
-2. Download and convert model weights:    
-    1. Download binary file with desired weights: 
-        1. Full weights: `wget https://pjreddie.com/media/files/yolov3.weights`
-        1. Tiny weights: `wget https://pjreddie.com/media/files/yolov3-tiny.weights` 
-        1. SPP weights: `wget https://pjreddie.com/media/files/yolov3-spp.weights` 
-    2. Run `python ./convert_weights_pb.py`        
-3. Run `tflite_convert --saved_model_dir=saved_model/ --output_file yolo_v3.tflite --saved_model_signature_key='predict'`
+2. Download binary file with desired weights: 
+    - Full weights: `wget https://pjreddie.com/media/files/yolov3.weights`
+    - Tiny weights: `wget https://pjreddie.com/media/files/yolov3-tiny.weights` 
+    - SPP weights: `wget https://pjreddie.com/media/files/yolov3-spp.weights` 
+3. Convert weights `python ./convert_weights_pb.py`        
+4. Run `tflite_convert --saved_model_dir=saved_model/ --output_file yolo_v3.tflite --saved_model_signature_key='predict'`
 
 
 Optional Flags
