@@ -1,10 +1,10 @@
 # tensorflow-lite-yolo-v3
 
-Implementation of YOLO v3 object detector in Tensorflow lite
+Convert the weights of YOLO v3 object detector into tensorflow lite format. It can be served for tensorflow serving as well.
 
 ## Setup env
-    `docker build -t tflite .`
-    `docker run -it -v /home/peace195/tensorflow-lite-yolo-v3:/root/ tflite`
+    docker build -t tflite .
+    docker run -it -v /home/peace195/tensorflow-lite-yolo-v3:/root/ tflite
     
 ## How to run:
 To run demo type this in the command line:
@@ -19,8 +19,10 @@ To run demo type this in the command line:
 3. Run `tflite_convert --saved_model_dir=saved_model/ --output_file yolo_v3.tflite --saved_model_signature_key='predict'`
 
 
-####Optional Flags
+Optional Flags
+
 convert_weights_pb.py:
+
     1. `--class_names`
             1. Path to the class names file
     2. `--weights_file`

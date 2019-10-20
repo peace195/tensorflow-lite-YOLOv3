@@ -132,3 +132,4 @@ saved_model/*
 .config/*
 .bash_history
 .bash_history/*
+.wget-hsts
