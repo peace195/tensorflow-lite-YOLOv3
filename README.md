@@ -13,8 +13,8 @@ Convert the weights of YOLO v3 object detector into tensorflow lite format. It c
     - Full weights: `wget https://pjreddie.com/media/files/yolov3.weights`
     - Tiny weights: `wget https://pjreddie.com/media/files/yolov3-tiny.weights` 
     - SPP weights: `wget https://pjreddie.com/media/files/yolov3-spp.weights` 
-3. Convert weights `python ./convert_weights_pb.py`        
-4. Run `tflite_convert --saved_model_dir=saved_model/ --output_file yolo_v3.tflite --saved_model_signature_key='predict'`
+3. Convert .weights to .pb saved_model `python ./convert_weights_pb.py` (this can be used for tensorflow serving)      
+4. Convert .pb to .tflite `tflite_convert --saved_model_dir=saved_model/ --output_file yolo_v3.tflite --saved_model_signature_key='predict'`
 
 
 Optional Flags
