@@ -1,6 +1,6 @@
 keras==2.2.4
 numpy==1.16.1
-scipy==1.1.0
+scipy==1.10.0
 pandas==0.24.1
 pillow==5.4.1
 scikit-image==0.14.2
